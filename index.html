@@ -1,48 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A11y News delivers the latest news about science, sports and entertainment with a focus on accessibility and user-friendliness for everyone.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A11y News delivers the latest news about science, sports and entertainment with a focus on accessibility and user-friendliness for everyone."
+    />
     <title>A11y News</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav class="navigation">
-        <ul>
-            <li class="nav-item" id="home"><a href="index.html">Home</a></li>
-            <li class="nav-item" id="world"><a href="world.html">World</a></li>
-            <li class="nav-item" id="sports"><a href="sports.html">Sports</a></li>
-            <li class="nav-item" id="entertainment"><a href="entertainment.html" target="_blank">Entertainment</a></li>
-        </ul>
+      <ul>
+        <li class="nav-item" id="home"><a href="index.html">Home</a></li>
+        <li class="nav-item" id="world"><a href="world.html">World</a></li>
+        <li class="nav-item" id="sports"><a href="sports.html">Sports</a></li>
+        <li class="nav-item" id="entertainment">
+          <a href="entertainment.html" target="_blank">Entertainment</a>
+        </li>
+      </ul>
     </nav>
 
     <main id="main-content">
-        <section class="search-section">
-            <label for="search-input">Search in page:</label>
-            <input type="text" id="search-input" placeholder="for..." tabindex="0">
-            <button type="submit" tabindex="0">Search</button>
-        </section>
+      <section class="search-section">
+        <label for="search-input">Search in page:</label>
+        <input type="text" id="search-input" placeholder="for..." />
+        <button type="submit">Search</button>
+      </section>
 
-        <article class="article">
-            <h1>Breaking News!</h1>
-            <p>Scientists have discovered a new deep-sea fish with bioluminescent fins off the coast of Australia. The
-                unnamed species is believed to have unique traits that could contribute to future medical research and
-                biotechnology.</p>
-            <div class="image-container">
-                <img src="images/ocean.jpg" alt="A deep-sea fish with bioluminescent fins in dark water">
-            </div>
-        </article>
-        <article class="article" onclick="alert('This does nothing!')" style="cursor: pointer;">
-            <h2>Lunar New Year: Celebrate with us!</h2>
-            <div class="image-container">
-                <img src="images/ocean.jpg" alt="A deep-sea fish with bioluminescent fins in dark water">
-                <img src="images/city.jpg" alt="A cityscape">
-                <img src="images/family.jpg" alt="Family of four">
-            </div>
-            <p>Access the news by pressing the images</p>
-        </article>
+      <article class="article">
+        <h1>Breaking News!</h1>
+        <p>
+          Scientists have discovered a new deep-sea fish with bioluminescent
+          fins off the coast of Australia. The unnamed species is believed to
+          have unique traits that could contribute to future medical research
+          and biotechnology.
+        </p>
+        <div class="image-container">
+          <img
+            src="images/ocean.jpg"
+            alt="A deep-sea fish with bioluminescent fins in dark water"
+          />
+        </div>
+      </article>
+      <article class="article">
+        <h2>Lunar New Year: Celebrate with us!</h2>
+        <div class="image-container">
+          <a href="#"
+            ><img
+              src="images/ocean.jpg"
+              alt="A deep-sea fish with bioluminescent fins in dark water"
+          /></a>
+          <a href="#"><img src="images/city.jpg" alt="A cityscape" /></a>
+          <a href="#"><img src="images/family.jpg" alt="Family of four" /></a>
+        </div>
+        <p>Access the news by pressing the images</p>
+      </article>
     </main>
     <script src="script.js" defer></script>
-</body>
+  </body>
 </html>
